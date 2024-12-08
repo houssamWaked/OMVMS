@@ -21,7 +21,6 @@ The application uses a relational database with the following tables:
 Vendor: Stores vendor details.
 Product: Stores product details and links to vendors.
 Order: Tracks customer orders.
-Admin: Admin account information.
 Customer: Customer account and contact details.
 Review: Customer reviews for products.
 Category: Product categorization.
@@ -44,13 +43,11 @@ A preferred IDE (e.g., IntelliJ IDEA, Eclipse).
 Installation Steps
 Clone this repository:
 bash
-Copy code
-git clone https://github.com/username/omvms.git
+git clone https://github.com/houssamWaked/omvms.git
 Set up the database:
 Import the database.sql file provided to create the required schema and tables.
 Configure the database connection in DatabaseHandler.java:
 java
-Copy code
 private static final String DB_URL = "jdbc:mysql://localhost:3306/omvms";
 private static final String DB_USER = "your_username";
 private static final String DB_PASSWORD = "your_password";
